@@ -1,59 +1,6 @@
-// Definindo Variáveis de Cores
-$primary-color: #4894fe;
-$secondary-color: #ffffff;
-
-// Reset de CSS Básico
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Arial", sans-serif;
-  background-color: $secondary-color;
-  color: #333;
-  line-height: 1.6;
-}
-
-// Estilos Globais
-a {
-  color: $primary-color;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-button {
-  background-color: $primary-color;
-  color: $secondary-color;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-
-  &:hover {
-    background-color: darken($primary-color, 10%);
-  }
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-// Classes Utilitárias
-.text-center {
-  text-align: center;
-}
-
-.mt-20 {
-  margin-top: 20px;
-}
-
-.mb-20 {
-  margin-bottom: 20px;
-}
+// main.scss
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/base";
+@import "partials/components";
+@import "partials/utilities";

@@ -1,11 +1,12 @@
 <template>
-  <Tutorial/>
+  <div class="container">
+    <h1>Welcome to FuelTrack</h1>
+    <nuxt-link to="/vehicles">View Vehicles</nuxt-link>
+  </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
-  name: 'IndexPage'
-})
+<script>
+export default {
+  name: "HomePage",
+};
 </script>
